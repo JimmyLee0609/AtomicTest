@@ -18,7 +18,7 @@ public class AtomicStampedReferenceTest {
 		stampedReference.set(getDomain(), 60);
 		stampedReference.toString();*/
 		AtomicStampedReference<Integer> atomicStampedReference 
-			= new AtomicStampedReference<Integer>(0, 0);
+			= new AtomicStampedReference<Integer>(0, 55);
 		final int stamp = atomicStampedReference.getStamp();
 		
         final Integer reference = atomicStampedReference.getReference();

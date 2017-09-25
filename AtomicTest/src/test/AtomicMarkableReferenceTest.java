@@ -7,7 +7,7 @@ public class AtomicMarkableReferenceTest {
 
 	public static void main(String[] args) {
 		AtomicMarkableReference<Domain> markableReference 
-			= new AtomicMarkableReference<Domain>(new Domain(3), false);
+			= new AtomicMarkableReference<Domain>(new Domain(3), true);
 		boolean attemptMark = markableReference.attemptMark(new Domain(21), true);
 		boolean compareAndSet = markableReference.compareAndSet(getDomain(), getDomain(), true, true);
 		Domain reference = markableReference.getReference();
